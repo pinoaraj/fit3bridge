@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate Xcode Project
         run: xcodegen generate
-        working-directory: ./fit3bridge
+        working-directory: .
 
       - name: Build Project (Release)
         run: |
