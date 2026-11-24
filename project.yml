@@ -1,0 +1,37 @@
+name: Fit3Bridge
+options:
+  bundleIdPrefix: com.sczlab
+  deploymentTarget:
+    iOS: "16.0"
+  minimumXcodeGenVersion: "2.38.0"
+  xcodeVersion: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    ENABLE_BITCODE: "NO"
+    SWIFT_EMIT_LOC_STRINGS: "YES"
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: "NO"
+    CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER: "YES"
+    CLANG_WARN_DOCUMENTATION_COMMENTS: "YES"
+    GCC_WARN_INHIBIT_ALL_WARNINGS: "NO"
+targets:
+  Fit3Bridge:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Fit3Bridge
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sczlab.fit3bridge
+        INFOPLIST_FILE: Fit3Bridge/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Fit3Bridge/Fit3Bridge.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_EMIT_LOC_STRINGS: "YES"
+    dependencies: []
+    scheme:
+      testTargets: []
+    buildRules: []
